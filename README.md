@@ -59,10 +59,10 @@ Please put the training data in a JSON file with the following format:
           "relative": [0.6, 0.3, 0.8, 0.5]
         }
       }
-      // 最多可以有任意多个 mask 条目，Dataset 会选取前 max_conditions 个
+      // There can be any number of mask entries, and the dataset will select the first max_conditions entries.
     ]
   },
-  // …更多条目
+  // …more example
 ]
 }
 ```
