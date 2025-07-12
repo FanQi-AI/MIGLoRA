@@ -18,7 +18,8 @@ pip install .
 cd ..
 ```
 ## Inference
-Before running the inference script, the model weights need to be downloaded from the [model card](https://huggingface.co/Jonas179/MIGLoRA) on Hugging Face.
+Before running the inference script, the model weights need to be downloaded from the [model card](https://huggingface.co/Jonas179/MIGLoRA) on Hugging Face and [stable-diffusion-v1-5 weights](https://huggingface.co/krnl/realisticVisionV51_v51VAE%20models/realisticVisionV51_v51VAE)  to `models`:
+
 ```
 python inference.py 0 1 1 3.5 200000 "SD15" "UniPCM" "results/inf" "ckpt/checkpoint-unet/pytorch_lora_weights.safetensors" "/ckpt/checkpoint-unet/model_1.safetensors"
 ```
